@@ -1,0 +1,9 @@
+1. What is DSA?
+a - Data Structure is way to organize and store data efficiently and Algoritm is step by step procedures
+    or formulas for solving problems.
+
+2. Basic Data Structure?
+a - List: indexing, slicing, appending and sorting
+    Tuple: Immutable Structure
+    Set: Unique items, Set operations
+    Dict: key-value access, Iteration
