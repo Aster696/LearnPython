@@ -18,6 +18,26 @@ class singlyLinkedList:
 
         temp.next = new_node
 
+    def update(self, old_value, data):
+        temp = self.head
+        while temp:
+            if(old_value == temp.data):
+                temp.data = data
+                print('Data updated succuffully')
+                break
+            temp = temp.next
+
+    def search(self, data):
+        temp = self.head
+        while temp:
+            if temp.data == data:
+                print("Found it")
+                return True
+            
+        print("Not found")
+        return False
+
+
     def displayNode(self):
         temp = self.head
         while temp:
@@ -30,4 +50,7 @@ li.append(10)
 li.append(20)
 li.append(30)
 li.append(40)
+li.displayNode()
+
+li.update(30, 88)
 li.displayNode()
