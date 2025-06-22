@@ -48,6 +48,9 @@ class singlyLinkedList:
             temp = temp.next
         print("None")
 
+    def pop(self, data):
+        temp = self.head
+
 li = singlyLinkedList()
 li.append(10)
 li.append(20)
