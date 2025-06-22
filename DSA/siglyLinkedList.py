@@ -29,12 +29,15 @@ class singlyLinkedList:
 
     def search(self, data):
         temp = self.head
+        index = 0
         while temp:
             if temp.data == data:
-                print("Found it")
+                print("Found value: ", data, " at position: ", index)
                 return True
+            temp = temp.next
+            index += 1
             
-        print("Not found")
+        print("Value not found")
         return False
 
 
@@ -54,3 +57,5 @@ li.displayNode()
 
 li.update(30, 88)
 li.displayNode()
+
+li.search(88)
